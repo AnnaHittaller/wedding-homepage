@@ -1,0 +1,302 @@
+
+/*---- GENERAL STYLES ----*/
+
+* {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,
+ul, dd,
+p,figure,
+hr
+div, img {
+    margin-bottom: 1rem;
+}
+
+section {
+  margin: 1.5rem auto;
+  padding: .5rem 1rem;
+}
+
+h2 {
+  margin-top: 1.5rem;
+}
+
+h3 {
+  margin-top: 2rem;
+}
+
+dt {
+  margin-bottom: .5rem;
+}
+
+dd {
+  margin-bottom: 1.5rem;
+}
+
+.program p {
+  padding-bottom: .5rem;
+}
+
+header .wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.hero-text {
+  padding: 1.5rem 1rem;
+}
+
+header p {
+  margin-bottom: 0;
+}
+
+footer {
+  display: table;
+}
+
+.footer-text {
+  display: table-cell;
+  width: 100vw;
+  text-align: center;
+  vertical-align: middle;
+  padding: 1.5rem 1rem;
+}
+
+
+/* ---- TYPOGRAPHY ----*/
+
+h3, header p {
+  font-family: 'Libre Baskerville', serif;
+}
+
+#headline {
+  font-size: 3.5rem;
+}
+
+
+header p {
+  color: #fff;
+  font-size: 1.25rem;
+  letter-spacing: .1rem;
+}
+
+h2, h3, p, .locations h3 {
+  color: #444349;
+}
+
+h1, dt, dd, li, .program h2, .program p, .faq h2, h3 {
+  color: #d2ba87;
+}
+
+a {
+  color: #bd806e;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #eda087;
+  transition: color .15s ease-in-out;
+}
+
+small {
+  color: #fff;
+}
+
+h1, h2 {
+  font-family: 'Great Vibes', cursive;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+p, li, dd, dt, small {
+  font-family: Mulish, sans-serif;
+}
+ ul {
+  margin-bottom: 1.5rem;
+}
+
+dt {
+  font-weight: 700;
+}
+
+.program p {
+  font-style: italic;
+}
+
+.tagline {
+  line-height: 2.5rem;
+  letter-spacing: .15rem;
+}
+
+dt, dd, li, p {
+  line-height: 1.5rem;
+  font-size: 1.125rem;
+}
+
+footer {
+  font-size: .875rem;
+  height: 10vh;
+  line-height: 1.5rem;
+}
+
+/* ---- BACKGROUNDS ----*/
+
+body {
+  background-image: url(https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png);
+}
+
+.program, .faq {
+  background-color: hsla(100,0%,0%,.6);
+}
+
+footer {
+  background-color: #606060;
+}
+
+h1, h2, h3, p {
+  text-align: center;
+}
+
+.hero-text {
+  background: rgba(0, 0, 0, 0.7);
+
+}
+
+/* ---- IMAGES AND PICTURES ----*/
+
+header {
+  background: url(https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg) no-repeat 70% center/cover;
+  display: table;
+  height: 100vh;
+  width: 100%;
+}
+
+.gifts img, .locations img{
+  display: block;
+  margin: 0 auto 1.5rem auto;
+  width: 100px;
+}
+
+/* ---- DECORATIONS, DIVIDER LINES ---*/
+
+.tagline::after {
+  display: block;
+  content: "";
+  width: 50%;
+  height: 1px;
+  background-color: #fff;
+  margin: .5rem auto 1.5rem auto;
+}
+
+.date::before, .date::after {
+  display: inline-block;
+  content: "";
+  height: 1px;
+  width: 1.5rem;
+  background-color: #fff;
+  vertical-align: middle;
+  margin: 0 .5rem;
+}
+
+.ceremony-info p::after, .photos-info p::after, .party-info p::after {
+  display: block;
+  content: "";
+  width: 25vw;
+  height: .1875rem;
+  background-color: #444349;
+  margin: 1.5rem auto;
+}
+
+.column-food::after, .column-travel::after, .column-other::after {
+  display: block;
+  content: "";
+  width: 50vw;
+  height: .1875rem;
+  background-color: #d2ba87;
+  margin: 1.5rem auto;
+}
+
+
+/* ----- TABLET VERSION ---*/
+
+@media screen and (min-width: 768px) {
+  
+  .tagline {
+    text-transform: uppercase;
+    line-height:
+  }
+  
+  .hero-text {
+    width: 50vw;
+    margin: 0 auto;
+  }
+  
+  #headline {
+    font-size: 7rem;
+    line-height: 9rem;
+    padding: 0 2rem;
+  }
+  
+  header {
+    background: url(https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg) no-repeat center/cover;
+  }
+  
+  .party-info, .photos-info, .ceremony-info {
+    float: left;
+    width: 33%;
+    padding: 0 15px;  
+  }
+  
+  .locations::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  
+  .ceremony-info p::after, .photos-info p::after, .party-info p::after   {
+    display: none;
+  }
+  
+  ul {
+    width: 35vw;
+    margin: 0 auto;
+  }
+  
+  .column-travel, .column-food, .column-other {
+    float: left;
+    width: 33%;
+    padding: 0 15px;
+  }
+  
+    .faq::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  
+  .column-food::after, .column-travel::after, .column-other::after {
+  display: none;
+  }
+  
+  .faq h3 {
+    text-align: left;
+  }
+  
+  footer {
+    height: 5vh;
+  }
+  
+    ul {
+    margin-bottom: 1.5rem;
+  }
+  
+}
